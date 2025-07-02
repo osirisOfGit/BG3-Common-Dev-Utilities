@@ -23,8 +23,8 @@ https://github.com/FallenStar08/BG3-DUMP/tree/main
 Ide helper for SE functions completion : 
 https://github.com/Norbyte/bg3se/blob/main/BG3Extender/IdeHelpers/ExtIdeHelpers.lua
 
+### Misc
+
 Most of the Common Utilities: [Fararagi](https://next.nexusmods.com/profile/Fararagi?gameId=3474)
 
 Aahz's toolbox of insanity - https://github.com/Aahzmandius/_Libs
-
-
