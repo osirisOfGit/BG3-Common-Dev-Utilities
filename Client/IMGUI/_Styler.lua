@@ -9,7 +9,7 @@ function Styler:DynamicLabelTree(tree)
 	tree.SpanFullWidth = true
 
 	return tree, function(count)
-		tree.Label = label .. (count > 0 and (" - " .. count .. " " .. Translator:translate("selected")) or "") .. "###" .. label
+		tree.Label = label .. (count > 0 and (" - " .. count .. " " .. (Translator.translationTable["selected"] and Translator:translate("selected") or "selected")) or "") .. "###" .. label
 	end
 end
 
@@ -29,7 +29,7 @@ function Styler:CheapTextAlign(text, parent, font)
 		---@type ExtuiSelectable
 		local selectable = parent:AddSelectable(text)
 		if font then
-			selectable.Font = font
+			Styler:ScaledFont(selectable, font)
 		end
 		selectable:SetStyle("SelectableTextAlign", 0.5)
 		selectable.Disabled = true
